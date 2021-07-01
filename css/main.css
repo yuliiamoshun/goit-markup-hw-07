@@ -285,12 +285,13 @@ img {
   display: flex;
 }
 
-.work-section__item + .work-section__item {
-  margin-left: 30px;
+.work-section__item {
+  position: relative;
+  cursor: pointer;
 }
 
-.work-section__item:hover .work-section__label {
-  opacity: 1;
+.work-section__item + .work-section__item {
+  margin-left: 30px;
 }
 
 .work-section__label {
@@ -312,6 +313,10 @@ img {
   background: rgba(47, 48, 58, 0.8);
   -webkit-transition: 250ms;
   transition: 250ms;
+}
+
+.work-section__item:hover .work-section__label {
+  opacity: 1;
 }
 
 .team-section {
@@ -843,11 +848,11 @@ img {
   height: 15px;
   display: inline-block;
   vertical-align: middle;
-  background-image: url(/images/icons/checkbox.svg);
+  background-image: url("/images/icons/checkbox.svg");
   border-radius: 2px;
 }
 
-.modal__check:hover + .modal__checkbox {
+.modal__check:hover + .modal__checkbox::before {
   width: 16px;
   height: 15px;
   display: inline-block;
@@ -857,7 +862,7 @@ img {
   border-radius: 2px;
 }
 
-.modal__check:checked + .modal__checkbox {
+.modal__check:checked + .modal__checkbox::before {
   width: 16px;
   height: 15px;
   display: inline-block;
@@ -939,8 +944,12 @@ img {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  background-color: var(--white);
+  background-color: #ffffff;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal__close-modal:hover {
+  fill: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */

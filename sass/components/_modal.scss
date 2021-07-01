@@ -149,32 +149,32 @@
                     height: 15px;
                     display: inline-block;
                     vertical-align: middle;
-                    background-image: url(/images/icons/checkbox.svg);
+                    background-image: url("/images/icons/checkbox.svg");
                     border-radius: 2px;
-                  }
 
-                .modal__check:hover + & {
-                    width: 16px;
-                    height: 15px;
-                    display: inline-block;
-                    vertical-align: middle;
-                    background: $white-color;
-                    border: 1px solid $accent-color;
-                    border-radius: 2px;
+                      .modal__check:hover + & {
+                          width: 16px;
+                          height: 15px;
+                          display: inline-block;
+                          vertical-align: middle;
+                          background: $white-color;
+                          border: 1px solid $accent-color;
+                          border-radius: 2px;
+                        }
+      
+                      .modal__check:checked + & {
+                          width: 16px;
+                          height: 15px;
+                          display: inline-block;
+                          vertical-align: middle;
+                          background: $accent-color;
+                          background-image: url("/images/icons/check.svg");
+                          background-repeat: no-repeat;
+                          background-position: center;
+                        }
                   }
-
-                .modal__check:checked + & {
-                    width: 16px;
-                    height: 15px;
-                    display: inline-block;
-                    vertical-align: middle;
-                    background: $accent-color;
-                    background-image: url("/images/icons/check.svg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                  }
-                  
-          }
+                    
+            }
 
         &__check {
             appearance: none;
@@ -238,8 +238,7 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
-        
-            background-color: $white;
+            background-color: $white-color;
             border-radius: 50%;
             border: 1px solid rgba(0, 0, 0, 0.1);
 
