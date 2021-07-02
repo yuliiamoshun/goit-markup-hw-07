@@ -179,9 +179,10 @@ img {
 
 .hero {
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-background.jpeg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-background.jpeg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-background.jpeg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-background.jpeg");
   max-width: 1600px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -848,7 +849,7 @@ img {
   height: 15px;
   display: inline-block;
   vertical-align: middle;
-  background-image: url("/images/icons/checkbox.svg");
+  background-image: url("../../images/icons/checkbox.svg");
   border-radius: 2px;
 }
 
@@ -868,7 +869,7 @@ img {
   display: inline-block;
   vertical-align: middle;
   background: #2196f3;
-  background-image: url("/images/icons/check.svg");
+  background-image: url("../../images/icons/check.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
